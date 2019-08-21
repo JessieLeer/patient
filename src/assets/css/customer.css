@@ -1,0 +1,55 @@
+ul, menu, dir {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 0px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	display: block;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
+
+hr {
+	display: block;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+	border-top-width: 1px;
+}
+
+li{
+	list-style: none;
+}
+
+.serial .el-message-box__header{
+	display: none;
+}
+
+.serial .el-message-box__content{
+	padding: 10px 15px 0px 15px;
+}
+
+.input-wrapper .el-card__body {
+  padding: 0;
+}
+
+.text-input .el-textarea__inner {
+  border: none;
+}
+
+.vdr-stick{
+	display: none;
+}
+	
+.vdr.active:before{
+	outline: 0px dashed #d6d6d6;
+}
