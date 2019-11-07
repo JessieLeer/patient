@@ -104,7 +104,7 @@ export default {
 				if(val == this.vcode) {
 					this.$http.get('/api/web/user/getPatientCaseByPhone', {params: {phone: this.form.phone, code: val}}).then((res) => {
 						if(res.data.retcode == 1) {
-							if(res.data.data.name == '') {
+							if(res.data.data.name == null) {
 								this.unEditable = false
 							}else{
 								this.unEditable = true

@@ -102,7 +102,6 @@ export default {
 		cheader,
 	},
 	created() {
-		console.log(this.user)
 		this.loginIm()
 	},
 	mounted() {

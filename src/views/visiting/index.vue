@@ -36,15 +36,15 @@
 							<div>
 								<el-input type="textarea" rows='3' v-model="editing" @keyup.native.enter='sendPrivateText' class='text-input'></el-input>
 								<el-row>
-								  <el-col :span='12'>
-									  <el-button type='warning' size='small' class='ml-20' v-on:click='finish'>结束问诊</el-button>
-									</el-col>
-									<el-col :span='12' class=' f-tar'>
+									<el-col :span='24' class=' f-tar'>
 									  <el-button class='mr-20' type='primary' v-on:click='sendPrivateText' size='small' v-bind:disabled='editing == "" ? true : false'>发送</el-button>
 									</el-col>
 								</el-row>
 							</div>
 						</el-card>
+					</el-col>
+					<el-col :span='6'>
+					  <el-button type='warning' size='small' class='ml-20' v-on:click='finish'>结束问诊</el-button>
 					</el-col>
 				</el-row>
 				<VueDragResize :isActive="true" v-bind:w="200" v-bind:h='100' v-on:resizing="resize" v-on:dragging="resize" v-show="audioShow" class='bg-white'>

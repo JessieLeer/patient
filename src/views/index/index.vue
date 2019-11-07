@@ -13,7 +13,8 @@
 									<el-button type="text" v-bind:disabled='item.online == 1 ? false : true'>{{item.online == 1 ? `在线 | 当前${item.queueNum}人排队` : `离线 | 当前${item.appointmentNum}人预约`}}</el-button>
 								</section>
 							</div>
-							<el-tooltip class="item" effect="dark" v-bind:content="item.intro" placement="top-start">
+							<el-tooltip class="item" effect="dark" placement="top-start">
+							  <section slot='content' style='max-width: 300px'>{{item.intro}}</section>
 							  <p class='intro f-tal'>{{item.intro.substr(0,60)}}...</p>
               </el-tooltip>
 							<el-button type='primary' size='small' v-if='item.online == 1' v-on:click='go(`/form/${item.id}/${item.imUsername}`)'>选他问诊</el-button>
